@@ -1,0 +1,3 @@
+C:\Users\MathMan\Documents\Visual Studio 2015\Projects\ImageDraw\Image Genetics\bin\Debug\Image Genetics.exe.config
+C:\Users\MathMan\Documents\Visual Studio 2015\Projects\ImageDraw\Image Genetics\obj\Debug\Image Genetics.exe
+C:\Users\MathMan\Documents\Visual Studio 2015\Projects\ImageDraw\Image Genetics\obj\Debug\Image Genetics.pdb
