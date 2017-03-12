@@ -1,0 +1,20 @@
+c:\users\mathman\documents\visual studio 2015\Projects\Image Genetics\Image Genetics\bin\Debug\Image Genetics.exe.config
+c:\users\mathman\documents\visual studio 2015\Projects\Image Genetics\Image Genetics\bin\Debug\Image Genetics.exe
+c:\users\mathman\documents\visual studio 2015\Projects\Image Genetics\Image Genetics\bin\Debug\Image Genetics.pdb
+c:\users\mathman\documents\visual studio 2015\Projects\Image Genetics\Image Genetics\obj\Debug\Image Genetics.csprojResolveAssemblyReference.cache
+c:\users\mathman\documents\visual studio 2015\Projects\Image Genetics\Image Genetics\obj\Debug\Image_Genetics.Form1.resources
+c:\users\mathman\documents\visual studio 2015\Projects\Image Genetics\Image Genetics\obj\Debug\Image_Genetics.Properties.Resources.resources
+c:\users\mathman\documents\visual studio 2015\Projects\Image Genetics\Image Genetics\obj\Debug\Image Genetics.csproj.GenerateResource.Cache
+c:\users\mathman\documents\visual studio 2015\Projects\Image Genetics\Image Genetics\obj\Debug\Image Genetics.exe
+c:\users\mathman\documents\visual studio 2015\Projects\Image Genetics\Image Genetics\obj\Debug\Image Genetics.pdb
+c:\users\mathman\documents\visual studio 2015\Projects\Image Genetics\Image Genetics\obj\Debug\Image_Genetics.DrawingForm.resources
+C:\Users\MathMan\Documents\Visual Studio 2015\Projects\ImageDraw\Image Genetics\bin\Debug\Image Genetics.exe.config
+C:\Users\MathMan\Documents\Visual Studio 2015\Projects\ImageDraw\Image Genetics\obj\Debug\Image Genetics.exe
+C:\Users\MathMan\Documents\Visual Studio 2015\Projects\ImageDraw\Image Genetics\obj\Debug\Image Genetics.pdb
+C:\Users\MathMan\Documents\Visual Studio 2015\Projects\ImageDraw\Image Genetics\bin\Debug\Image Genetics.exe
+C:\Users\MathMan\Documents\Visual Studio 2015\Projects\ImageDraw\Image Genetics\bin\Debug\Image Genetics.pdb
+C:\Users\MathMan\Documents\Visual Studio 2015\Projects\ImageDraw\Image Genetics\obj\Debug\Image Genetics.csprojResolveAssemblyReference.cache
+C:\Users\MathMan\Documents\Visual Studio 2015\Projects\ImageDraw\Image Genetics\obj\Debug\Image_Genetics.DrawingForm.resources
+C:\Users\MathMan\Documents\Visual Studio 2015\Projects\ImageDraw\Image Genetics\obj\Debug\Image_Genetics.Form1.resources
+C:\Users\MathMan\Documents\Visual Studio 2015\Projects\ImageDraw\Image Genetics\obj\Debug\Image_Genetics.Properties.Resources.resources
+C:\Users\MathMan\Documents\Visual Studio 2015\Projects\ImageDraw\Image Genetics\obj\Debug\Image Genetics.csproj.GenerateResource.Cache
