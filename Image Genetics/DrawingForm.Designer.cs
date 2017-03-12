@@ -136,6 +136,7 @@
             this.Controls.Add(this.pbDrawing);
             this.Name = "DrawingForm";
             this.Text = "DrawingForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.DrawingForm_FormClosing);
             this.Load += new System.EventHandler(this.DrawingForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pbDrawing)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbOriginal)).EndInit();

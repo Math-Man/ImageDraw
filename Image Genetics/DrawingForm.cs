@@ -23,7 +23,7 @@ namespace Image_Genetics
         //Access to controls
         public PictureBox getpbOriginal() { return pbOriginal; }
         public PictureBox getpbDr() { return pbDrawing; }
-        public ProgressBar getCpyPB() { return pbCopy; }    
+        public ProgressBar getCpyPB() { return pbCopy; }
         public int cThreshold { get; set; }
         public int colorThreshold { get; set; }
         public int randomness { get; set; }
@@ -44,14 +44,14 @@ namespace Image_Genetics
             button1.Enabled = false;
             bCopyTest.Enabled = false;
             Console.WriteLine(button1.Enabled);
-            var watch = System.Diagnostics.Stopwatch.StartNew();   
+            var watch = System.Diagnostics.Stopwatch.StartNew();
 
             Color c = new Color();
             Pen aPen = new Pen(c);
             pbGraphics = pbDrawing.CreateGraphics();
 
             Task draw = Task.Run(() =>  //Create a thread to draw.
-            {        
+            {
 
                 for (int i = 0; i < pbDrawing.Height; i++)
                 {
@@ -184,12 +184,13 @@ namespace Image_Genetics
 
                                 drawPixel(cReplace, e.point.X, e.point.Y);
                                 e.isChanged = true;
+                                
+                                    Invoke((MethodInvoker)delegate  //Create an invoker to access controls from inside a thread.
+                                    {
+                                        pbCopy.Value = changedPixels;   //Updates the progress bar
+                                        lbProgressB.Text = "Progress: " + pbCopy.Value + " / " + pbCopy.Maximum;    //Prints out the progress
+                                    });
 
-                                Invoke((MethodInvoker)delegate  //Create an invoker to access controls from inside a thread.
-                                {
-                                    pbCopy.Value = changedPixels;   //Updates the progress bar
-                                    lbProgressB.Text = "Progress: " + pbCopy.Value + " / " + pbCopy.Maximum;    //Prints out the progress
-                                });
                                 changedPixels++;
 
                                 if (changedPixels >= (pixelsToChange.Count) - (pixelsToChange.Count * (100 - cThreshold) / 100))//Safe-check to make sure program stops when required threshold is reached!
@@ -218,7 +219,7 @@ namespace Image_Genetics
             Bitmap bmp1 = (Bitmap)m;
             Bitmap bmp1R = new Bitmap(bmp1, new Size(pbDrawing.Width, pbDrawing.Height));    //Scale it
             Task draw = Task.Run(() => { tryToDraw(bmp1R, colorThreshold, randomness); });  //Threshold: anything below 25 will look good anything above 50 will look like a mish mash of colours, 8 or below is very high percision
-
+            
         }
 
         private void bSaveDrawing_Click(object sender, EventArgs e) //Save image at any time
@@ -231,7 +232,10 @@ namespace Image_Genetics
             }
         }
 
-
+        private void DrawingForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Environment.Exit(Environment.ExitCode); //Force exit without errors
+        }
     }
 
 }
